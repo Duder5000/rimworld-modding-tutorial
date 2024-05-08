@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <!-- Example recipe: make herbal medicine from theragold flowers -->
+  <RecipeDef>
+    <defName>ExamplePlant_Make_MedicineHerbal</defName>
+
+    <label>Make herbal medicine from theragold</label>
+
+    <description>Make herbal medicine from theragold flowers.</description>
+
+    <jobString>Making herbal medicine from theragold flowers.</jobString>
+
+    <effectWorking>Cook</effectWorking>
+
+    <soundWorking>Recipe_CookMeal</soundWorking>
+
+    <workSkill>Cooking</workSkill>
+
+    <workAmount>300</workAmount>
+
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+
+    <recipeUsers>
+      <li>CraftingSpot</li>
+      <li>DrugLab</li>
+    </recipeUsers>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ExamplePlant_RawTheragold</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ExamplePlant_RawTheragold</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <MedicineHerbal>1</MedicineHerbal>
+    </products>
+
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <!-- Example raw food: raw theragold -->
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>ExamplePlant_RawTheragold</defName>
+
+    <label>theragold flowers</label>
+
+    <description>Raw theragold flowers. This can be cooked into meals or crafted into various medicinal products.</description>
+
+    <graphicData>
+      <texPath>ExampleMod/RawTheragold</texPath>
+    </graphicData>  
+
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+
+  </ThingDef>
+</Defs>
